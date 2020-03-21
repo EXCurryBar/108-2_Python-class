@@ -64,7 +64,7 @@ def Q8():
         coins.append(Money // val)
         Money %= val
 
-    print(coins[0],"fifty dollars\n",coins[1],"ten dollars\n",coins[2],
+    print('',coins[0],"fifty dollars\n",coins[1],"ten dollars\n",coins[2],
             "five dollars\n",coins[3],"one dollars")
     system("pause")
 
