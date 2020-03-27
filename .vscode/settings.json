@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "C:\\Users\\AlanLin\\Anaconda3\\python.exe"
+    "python.pythonPath": "C:\\Users\\AlanLin\\Anaconda3\\python.exe",
+    "pythonIndent.useTabOnHangingIndent": true
 }
