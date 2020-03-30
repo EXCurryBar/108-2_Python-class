@@ -63,7 +63,7 @@ def Q17():
     cw = 0
     pw = 0
     du = 0
-    for i in range(3):
+    for _ in range(3):
         cmora = randint(1, 3)
         print(cmora)
         mora = int(input("scissor(1), rock(2), paper(3): "))
