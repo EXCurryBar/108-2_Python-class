@@ -1,5 +1,5 @@
 from math import sqrt
-from random import randint
+from random import randint, choice
 from os import system
 from time import sleep
 
@@ -92,8 +92,8 @@ def Q24():
                       '6', '7', '8', '9', '10', 'Jack', 'Queen', 'King']
     list_of_suit = ['Clubs', 'Diamonds', 'Hearts', 'Spades']
 
-    print("The card you picked is ", list_of_number[randint(0, 12)],
-          " of ", list_of_suit[randint(0, 3)])
+    print("The card you picked is ", choice(list_of_number),
+          " of ", choice(list_of_suit))
     sleep(3)
 
 
