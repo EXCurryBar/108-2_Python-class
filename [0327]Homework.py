@@ -3,6 +3,8 @@ from random import randint, choice
 from os import system
 from time import sleep
 
+# ============Code for Question 1==============
+
 
 def Q1():
     a, b, c = eval(input("Enter a,b,c :"))
@@ -18,6 +20,8 @@ def Q1():
         print("The equation has no solution")
     sleep(3)
 
+# ============Code for Question 3==============
+
 
 def Q3():
     a, b, c, d, e, f = eval(input("Enter a,b,c,d,e,f :"))
@@ -31,6 +35,8 @@ def Q3():
         print("The equation has no solution")
     sleep(3)
 
+# ============Code for Question 8==============
+
 
 def Q8():
     a, b, c = eval(input("Enter three integers :"))
@@ -42,6 +48,8 @@ def Q8():
         a, b = b, a
     print("The sorted numbers are ", a, b, c)
     sleep(3)
+
+# ============Code for Question 15==============
 
 
 def Q15():
@@ -57,6 +65,8 @@ def Q15():
     else:
         print("Sorry, no match")
     sleep(3)
+
+# ============Code for Question 17==============
 
 
 def Q17():
@@ -85,6 +95,8 @@ def Q17():
     else:
         print("Draw")
     sleep(3)
+
+# ============Code for Question 24==============
 
 
 def Q24():
