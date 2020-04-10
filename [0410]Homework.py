@@ -16,12 +16,12 @@ def Q26():
 def Q27():
     def function(x, y): return 100*x - 200*y
     x, y = eval(input("Enter a point's x and y coordinates :"))
-    if(function(x, y) > 0):
-        print("The point is not in the triangle")
-    elif(function(x, y) < 0):
+    if(function(x, y) > 0 and (x < 0 or y < 0)):
         print("The point is in the triangle")
+    elif(function(x, y) < 0):
+        print("The point is not in the triangle")
     else:
-        print("The point is on the function")
+        print("The point is not in the triangle")
 
 # ===================Code for Question 33=======================
 
