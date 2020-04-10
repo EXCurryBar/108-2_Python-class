@@ -53,14 +53,15 @@ def Q8():
 
 
 def Q15():
-    Lottery = str(randint(100, 999))
+    Lottery = str(randint(0, 999)).zfill(3)
     print(Lottery)
     User_Num = input("Enter your lottery pick(three digits) :")
+    print("The lottery number is", Lottery)
     if Lottery == User_Num:
         print("Exact match : you win $10,000")
     elif sorted(Lottery) == sorted(User_Num):
         print("Match all digits : you win $3,000")
-    elif set(Lottery).intersection(set(User_Num)):
+    elif len(set(Lottery).intersection(set(User_Num))) == 1:
         print("Match one digit : you win $1,000")
     else:
         print("Sorry, no match")
