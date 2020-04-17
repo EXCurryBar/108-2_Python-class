@@ -35,7 +35,7 @@ def Q33():
 
 def Q34():
     Hex = input("Enter a hexadecimal value(0~F) :")
-    if(Hex >= '0'and Hex <= '9' and len(Hex) == 1):
+    if('0'<= Hex <= '9' and len(Hex) == 1):
         print("The decimal value is", Hex)
     elif(Hex >= 'A' and Hex <= 'F'):
         print("The decimal value is", 10 + ord(Hex)-ord('A'))
@@ -66,5 +66,5 @@ while True:
             print('Wrong input')
             system("pause")
     except KeyboardInterrupt:
-        print('bye')
+        print('\nbye')
         break
