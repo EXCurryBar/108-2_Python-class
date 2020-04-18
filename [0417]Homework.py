@@ -1,4 +1,4 @@
-#from __future__ import print_function
+
 def Q9():
     loan = 10000
     years_of_loan = 0
@@ -10,16 +10,15 @@ def Q9():
 
 
 def Q11():
-    score = 0
-    name = ""
+    stu_list = []
     total_student = int(input("Enter the number of student: "))
     for _ in range(total_student):
         name_tmp = input("Enter the student's name: ")
         score_tmp = int(input("Enter the student's score: "))
-        if score_tmp > score:
-            score = score_tmp
-            name = name_tmp
-    print("Top score:\n", name, "'s score is", score)
+        stu_list.append([score_tmp, name_tmp])
+    stu_list.sort(reverse=True)
+    print("Top two student:")
+    [print(stu_list[i][1], "'s score is", stu_list[i][0]) for i in range(2)]
 
 
 def Q19():
