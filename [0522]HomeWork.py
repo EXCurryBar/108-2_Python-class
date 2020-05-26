@@ -20,14 +20,9 @@ def readShit(filename):
 
 
 def Q1():
-    filename = input("Enter a Python source code filename: ").strip()
-    text = readShit(filename)
-    idk = []
+    text = readShit(input("Enter a Python source code filename: "))
     print("The Key words are")
-    for word in text:
-        if word in keyWords:
-            idk.append(word)
-    print(idk)
+    [print(word,end=' ') for word in text if word in keyWords]
 
 
 def Q2():
@@ -47,20 +42,12 @@ def Q2():
 
 
 def Q3():
-    occ_lst = []
-    filename = input("Enter a Python source code filename: ").strip()
-    text = readShit(filename)
-    for word in text:
-        if word in keyWords:
-            occ_lst.append(word)
-    count = [[x, occ_lst.count(x)]for x in set(occ_lst)]
-    print(count)
+    occ_lst = [word for word in readShit(input("Enter a Python source code filename: ")) if word in keyWords]
+    print([[x, occ_lst.count(x)]for x in set(occ_lst)])
 
 
 def Q8():
-    filename = input("Enter a txt file: ").strip()
-    text = readShit(filename)
-    [print(x, end=' ')for x in sorted(set(text))]
+    [print(x, end=' ')for x in sorted(set(readShit(input("Enter a txt file: "))))]
 
 
 while True:
